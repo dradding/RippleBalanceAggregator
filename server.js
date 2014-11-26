@@ -43,17 +43,23 @@ function getBalances(wallet){ //This function actually calls Ripple-Lib to get i
 	  var options = {
 	  	account: wallet,
 	  	ledger: 'validated'
-	  }
+	  };
 	  //First get XRP balance with account_info
 	  var request1 = remote.requestAccountInfo(options, function(err, info) {
-	  	if (err) { return onErr(err); }
+	  	if (err) { 
+	  		console.log(err.remote.error_message);
+	 		  startPrompt();
+	  		return; 
+	  	}
 	 	//console.log(info)
 	 	XRP = info.account_data.Balance; //Set the XRP value
 	  });
 	  //Next get IOU balances by process account_lines
 	  var request2 = remote.requestAccountLines(options, function(err, info) {
 	  	balances = {} //Clear balances from any previous uses
-	  	if (err) { return onErr(err); }
+	  	if (err) { 
+	  		return; //It is *extremely* unlikely the network will go out between request1 and request2.
+	  	}
 		 	var lines = info.lines.length;
 		 	for (i=0; i<lines; i++){ //Loop through each trustline
 		 		//if currency in balances, update
