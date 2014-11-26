@@ -10,17 +10,17 @@
   "repository": {
   "type": "git",
   "url": "https://github.com/dradding/RippleBalanceAggregator"
-},
+  },
   "bugs": {
   "url": "https://github.com/dradding/RippleBalanceAggregator/issues"
-},
+  },
   "keywords": [
   "ripple",
   "xrp",
   "IOU"
-],
+  ],
   "dependencies": {
     "ripple-lib": "*",
     "prompt": "*",
-  }
+  },
 }
