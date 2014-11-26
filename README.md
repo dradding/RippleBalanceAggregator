@@ -1,5 +1,13 @@
 #Ripple Balance Aggregator
 
+###Overview
+
+Ripple Balance Aggregator provides an easy way to see the aggregated balances for a single Ripple Wallet as well as over multiple Ripple Wallets.
+
+###Quick Start
+
+Run 'npm install' to install depedencies and 'node server.js' to start the server.
+
 ###Implementation:
 
 I know Ripple is a JS/Node shop so I decided to build this in Node. Using Ripple Lib was a breeze between the documentation on Github, the WebSocket Tool, and the Ripple Charts Graph Tool. Additionally I didn't want to hardcode in any wallet addresses so I found a [prompt module](https://github.com/flatiron/prompt) to allow the users to enter in the wallet address.
