@@ -2,7 +2,7 @@
 
 ###Implementation:
 
-I know Ripple is a JS/Node shop so I decided to build this in Node. Using Ripple Lib was a breeze between the documentation on Github, the WebSocket Tool, and the Ripple Charts Graph Tool. Additionally I didn't want to hardcode in any wallet addresses so I found a prompt module to allow the users to enter in the wallet address.
+I know Ripple is a JS/Node shop so I decided to build this in Node. Using Ripple Lib was a breeze between the documentation on Github, the WebSocket Tool, and the Ripple Charts Graph Tool. Additionally I didn't want to hardcode in any wallet addresses so I found a [prompt module](https://github.com/flatiron/prompt) to allow the users to enter in the wallet address.
 
 ###Explanation:
 
