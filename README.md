@@ -6,7 +6,7 @@ Ripple Balance Aggregator provides an easy way to see the aggregated balances fo
 
 ###Quick Start
 
-Run 'npm install' to install depedencies and 'node server.js' to start the server.
+Run '''npm install''' to install depedencies and '''node server.js''' to start the server.
 
 ###Implementation:
 
